@@ -1,0 +1,22 @@
+[project]
+name = "perspicio"
+version = "0.1.0"
+description = "A Tool to Analyze Code"
+authors = [
+    {name = "philo-veritas", email = "edison.gee.lan@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[project.scripts]
+perspicio = "perspicio.perspicio:main"
